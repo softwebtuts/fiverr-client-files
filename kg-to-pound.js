@@ -63,14 +63,12 @@ function getAllUrlParams(url) {
 
   return obj;
 }
-
-var input = document.querySelector("#q"),
+window.addEventListener('load', function () {
+  var input = document.querySelector("#q"),
     output = document.querySelector("#converted");
-document.onload = function(){
-var kg = getAllUrlParams().kg;
+  var kg = getAllUrlParams().kg;
   console.log(kg);
   input.focus();
-  input.value = kg;
-}
-
+  input.value = Number(kg);
+})
 
