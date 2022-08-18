@@ -67,7 +67,7 @@ window.addEventListener('load', function () {
   var input = document.querySelector("#q"),
     output = document.querySelector("#converted");
   var kg = getAllUrlParams().kg;
-  console.log(kg);
+  alert(kg);
   input.focus();
   input.value = Number(kg);
 })
